@@ -1,0 +1,105 @@
+---
+title: "Era"
+description: "View detailed Juice WRLD eras with dates, track counts, covers, and reissues."
+icon: clock
+---
+
+## What Is The Era Command?
+
+The era command lets you view **Juice WRLD eras, sessions, and album reissues** with their **start / end dates**, **release / reissue dates**, **track counts**, and **official covers**.  
+It supports both **full names** and **abbreviations** (like `DRFL`, `GB&GR`, `TPNE`, etc.).
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has the permissions **"Send Messages"** and **"View Channel"** in the channel where you want to run the command.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Input an **era name** or an **abbreviation** to get details.  
+If multiple eras match, a **dropdown menu** lets you pick the correct one.
+</Info>
+
+<Tip>Type `.era` with no arguments to see a full list of supported eras & abbreviations.</Tip>
+
+<CodeGroup>
+```javascript Syntax
+.era (era name or abbreviation)
+```
+
+```javascript Example
+.era Goodbye & Good Riddance
+.era GB&GR
+```
+</CodeGroup>
+
+---
+
+## Handling Multiple Matches
+
+<Info title="Multiple Eras Found">
+When multiple results match your search, the bot displays a **dropdown menu**.  
+Select the correct era to view its information.
+</Info>
+
+<CodeGroup>
+```javascript Example
+Horizon: Multiple Matching Eras Found:
+[Select an era...]
+> Death Race For Love
+> Death Race For Love (Sessions)
+> Death Race For Love (Television Mixes)
+```
+</CodeGroup>
+
+---
+
+## Displayed Information
+
+When an era is found, the bot will send an embed containing:
+
+- **Era Title** (with official cover as thumbnail)  
+- **Start & End Dates** (for sessions)  
+- **Release & Reissue Dates** (for albums)  
+- **Total Track Count**  
+
+<Info title="Example Embed">
+Era: **Goodbye & Good Riddance (Sessions)**  
+Start Date: December 22, 2017  
+End Date: May 23, 2018  
+Total Tracks: 370  
+</Info>
+
+---
+
+## File Informations & Limits
+
+- Default embed color is **dark gray (`#14161a`)** if no custom color exists.  
+
+<Warning title="Era Not Found">
+If you see this error:  
+`Era not found. Make sure you typed it correctly!`  
+Double-check your spelling or try with / without an abbreviation.
+</Warning>
+
+---
+
+## Tips & Best Practices
+
+- Use **abbreviations** like `DRFL`, `GB&GR`, `TPNE` for faster access.  
+- Type `.era` with **no arguments** to see the full list of eras.  
+- Works with **sessions, albums, reissues, and posthumous compilations**.  
+- Dropdowns appear only when **multiple possible matches** exist.  
+
+---
+```

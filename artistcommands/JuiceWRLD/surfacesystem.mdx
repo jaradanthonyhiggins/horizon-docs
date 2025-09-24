@@ -1,0 +1,87 @@
+---
+title: "Automatic Surface System"
+description: "Automatically uploads the **NEWEST** Juice WRLD leaks when they surface & configure which channels to post surfaces to & which role gets pinged."
+icon: hammer
+---
+
+## What Are The Surface Setup Commands?
+
+These commands let you **configure automatic surface posting**:
+
+1. `.setsurfacechannel` – Sets the channel where surface messages will be reposted.  
+2. `.setsurfacerole` – Sets a role that will be pinged whenever a surface get's posted.  
+3. `.removesurfacesetup` – Removes all surface configuration for the server.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Danger>
+            You must have **administrator permissions** to run any of these commands.
+        </Danger>
+    </Step>
+</Steps>
+
+---
+
+## How They Work
+
+<Info>
+- `.setsurfacechannel #channel` – Specify the channel to post surfaces.  
+- `.setsurfacerole @role` – Specify a role to be pinged when **NEW** surfaces get posted.  
+- `.removesurfacesetup` – Clears both the surface channel and ping role.
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.setsurfacechannel #channel
+.setsurfacerole @role
+.removesurfacesetup
+```
+
+```javascript Example
+.setsurfacechannel #surfaces
+.setsurfacerole @Juice WRLD Surfaces
+.removesurfacesetup
+```
+</CodeGroup>
+
+---
+
+## Handling No Setup
+
+<Warning title="No Surface Configuration">
+If you try to remove a setup that doesn’t exist, Horizon will respond with:  
+`No surface configuration found for this server`
+</Warning>
+
+---
+
+## Displayed Information
+
+When setup commands are successfully run, Horizon shows an embed including:
+
+- **Channel:** The new surface posting channel  
+- **Role:** The role that will be pinged (if set)  
+- **Confirmation:** Success or removal confirmation
+<Info title="Example Embed">
+
+> ### **Channel Set**
+- Surfaces will now post in **#Surfaces**  
+- Ping role: **@Juice WRLD Surfaces**  
+
+---
+> ### **Role Set**
+- New surfaces posted will now ping: @role
+
+---
+> ### **Setup Removed**
+- Surface auto-posting disabled for this server
+</Info>
+
+---
+
+## Tips & Best Practices
+<Tip>Always verify the correct **channel and role** before setting them</Tip><Danger>Only **admins** can use these commands</Danger><Warning>Use `.removesurfacesetup` to reset if there are issues</Warning>

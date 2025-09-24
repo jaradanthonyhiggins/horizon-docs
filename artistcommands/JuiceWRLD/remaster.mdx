@@ -1,0 +1,93 @@
+---
+title: "Remaster"
+description: "Search for Juice WRLD remasters for unsurfaced songs."
+icon: waveform-lines
+---
+
+## What Is The .remaster Command?
+
+The `.remaster` command lets you **search for unsurfaced songs that have a remaster put together for that song.**.  
+It will return a detailed embed showing **song title(s), era, credits, and a preview button**.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has the permissions **"Send Messages"** and **"View Channel"** in the channel where you want to run the command.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Input any **full or partial track name** to fetch matching remasters.  
+If multiple matches are found, Horizon will show a **dropdown selection menu** to choose the correct song.  
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.remaster (songname)
+```
+
+```javascript Example
+.remaster Toxic Humans
+```
+</CodeGroup>
+
+---
+
+## Handling No Matches
+
+<Warning title="No Remaster Found">
+If no matching remaster is found for the song name you entered, Horizon will respond with:  
+`No Remaster Matching "<song name>" Found.`
+</Warning>
+
+---
+
+## Displayed Information
+
+When a remaster is found, Horizon will display a detailed embed including:
+
+- **Song Title(s)** (with link)  
+- **Era:** (with matching color & cover art thumbnail)  
+- **Creator (of the remaster)**  
+- **Preview Button:** Plays a **black video with audio** and previews the remaster up to **60 seconds**
+
+<Info title="Example Embed">
+
+> ## **Toxic Humans (Contemplating)**  
+
+> ### **Era:**
+- **Goodbye & Good Riddance**  
+---
+> ### **Creator**
+- **prod.vix**  
+---
+</Info>
+
+---
+
+## Navigation & Selection
+
+If multiple matches exist:
+
+- Horizon shows a **dropdown menu** with all matching songs  
+- Select the correct song to display its embed and preview  
+- Only one song is displayed per selection
+
+<Info>
+Dropdown selection is limited to **60 seconds** of interaction. If inactive for more than 60 seconds, the menu will disable.
+</Info>
+
+---
+
+## Tips & Best Practices
+
+<Tip>Always type **full or partial track names** accurately to get the best match</Tip>  

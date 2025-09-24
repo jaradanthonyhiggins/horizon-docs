@@ -1,0 +1,87 @@
+---
+title: "Song"
+description: "Search for every Juice WRLD song ever surfaced."
+icon: headphones
+---
+
+## What Is The .song Command?
+
+The `.session` command lets you **search for ANY Juice WRLD song to exist** and sends a detailed embed showing **song title, era, cover art, and the hyperlink to the song's download.**.  
+If multiple songs match the search term, a **dropdown menu** will let you choose the correct song.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has the permissions **"Send Messages"** and **"View Channel"** in the channel where you want to run the command.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Input any **song title* to fetch matching songs.  
+
+---
+
+Horizon will search for your search query and return an embed with the information and download to the song you requested.  
+If multiple matches are found, a **dropdown menu** will allow you to select the correct song.
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.song (songname)
+```
+
+```javascript Example
+.song underworld
+```
+</CodeGroup>
+
+---
+
+## Handling No Matches
+
+<Warning title="No Songs Found">
+If no song(s) are found for the name you entered, Horizon will respond with:  
+`No song matching '<session name>' found!`
+</Warning>
+
+---
+
+## Displayed Information
+
+When a song is found, Horizon will display a detailed embed including:
+
+- **Song Title(s)**  
+- **Era:** (with matching color & cover art thumbnail)  
+- **Preview Button:** (allows you to preview exactly **60** seconds of the song without downloading the song.)  
+
+<Info title="Example Embed">
+
+> ### **Song Name:**  
+- **Underworld**
+---
+
+> ### **Era:**
+- **Goodbye & Good Riddance**  
+</Info>
+
+---
+
+## Navigation & Selection
+
+<Info>
+Dropdown selection is limited to **60 seconds** of interaction. If inactive for more than 60 seconds, the menu will disable.
+</Info>
+
+---
+
+## Tips & Best Practices
+<Tip>Always type **full or partial song names** to get the best match.</Tip><Warning>Only the original requester can select from the dropdown menu.</Warning>
