@@ -1,0 +1,85 @@
+---
+title: "OG File"
+description: "Search and display Juice WRLD original file(s) straight from the studio unmodified with the **ORIGINAL** metadata information."
+icon: folder
+---
+
+## What Is The .ogfile Command?
+
+The **.ogfile** command allows you to **search Juice WRLD original file(s) straight from the studio with the highest sounding quality & original metadata.** and receive a **Discord embed with metadata** plus all available OG file uploads.  
+It also supports **era detection**, **dropdown selection for multiple matches**, and **automatic cleanup** of messages after a set time.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has permissions to **Send Messages**, **Embed Links**, and **Use External URLs** to fully display track information and the sheet button.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+When you run `.ogfile <track name>`, Horizon:
+
+1. Normalizes your search term to match song name(s).  
+2. If multiple matches are found:
+   - A **dropdown menu** is displayed to select the correct folder.  
+3. Once a song is chosen, Horizon:
+   - Retrieves all files inside (up to 100MB per file).  
+   - Sends them to the channel along with a metadata embed including:  
+     - Song Title(s)  
+     - Era & Era Thumbnail  
+     - Embed Color matching the Era  
+   - Starts a **timer** to delete the messages after 5 minutes, sending a success embed once deleted.
+
+---
+
+## Handling No Matches
+
+If no folder matches your search, Horizon responds with:  
+`No songs matching "<search term>" found!`
+
+---
+
+## Handling Multiple Matches
+
+When multiple folders match:
+
+- Horizon lists all matching song titles.  
+- You select the correct one via a **dropdown menu**.  
+- After selection, Horizon sends the metadata embed and all the files for the chosen song.  
+
+---
+
+## File Size Limits
+
+<Warning title="File Size Exceeded">
+Please Note That Files Over 100MB Will **NOT** be able to be uploaded.
+This Is Due To Discord's 100MB File Size Limit.
+</Warning>
+
+---
+
+## Automatic Cleanup
+
+- All embeds and sent files are **automatically deleted after 5 minutes**.  
+<Tip>Horizon then sends a success embed confirming deletion:  
+`Deleted all <NAME> OG file info!`</Tip>
+
+---
+
+## Tips & Best Practices
+
+<Tip>
+- Use **full or partial track names** when searching.  
+- Choose the correct folder when the dropdown appears.  
+Remember: **files are temporary** — they auto-delete after 5 minutes.  
+- Embed color and thumbnail correspond to the **era** of the track.  
+- Use `.ogfile` only when you need access to the **original working files** for a song.
+</Tip>
