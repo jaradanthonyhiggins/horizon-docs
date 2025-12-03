@@ -1,0 +1,110 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Horizon",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#55D799",
+    "dark": "#0D9373"
+  },
+  "favicon": "/public/favicon.png",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": [
+          "overview/introduction"
+        ]
+      },
+      {
+        "group": "Artist Commands",
+        "pages": [
+          {
+            "group": "Juice WRLD",
+            "pages": [
+              "artistcommands/JuiceWRLD/autogb",
+              "artistcommands/JuiceWRLD/cover",
+              "artistcommands/JuiceWRLD/era",
+              "artistcommands/JuiceWRLD/engineer",
+              "artistcommands/JuiceWRLD/groupbuy",
+              "artistcommands/JuiceWRLD/juicegif",
+              "artistcommands/JuiceWRLD/juiceimage",
+              "artistcommands/JuiceWRLD/juiceinfo",
+              "artistcommands/JuiceWRLD/location",
+              "artistcommands/JuiceWRLD/ogfile",
+              "artistcommands/JuiceWRLD/producer",
+              "artistcommands/JuiceWRLD/recorded",
+              "artistcommands/JuiceWRLD/remaster",
+              "artistcommands/JuiceWRLD/snippetsystem",
+              "artistcommands/JuiceWRLD/surfacesystem",
+              "artistcommands/JuiceWRLD/session",
+              "artistcommands/JuiceWRLD/snippet",
+              "artistcommands/JuiceWRLD/song",
+              "artistcommands/JuiceWRLD/surfaced",
+              "artistcommands/JuiceWRLD/unsurfaced"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Server Configuration",
+        "pages": [
+        ]
+      },
+      {
+        "group": "Donations",
+        "pages": [
+          "donations/paypal"
+        ]
+      },
+      {
+        "group": "Common Issues",
+        "pages": [
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "https://cdn.discordapp.com/avatars/1324942926886998046/e701ee6637f9ba5dd03eeb4fc691eb08.png?size=1024",
+    "dark": "https://cdn.discordapp.com/avatars/1324942926886998046/e701ee6637f9ba5dd03eeb4fc691eb08.png?size=1024"
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
+"navbar": {
+  "links": [],
+  "primary": {
+    "type": "button",
+    "label": "Invite Horizon",
+    "href": "https://discord.com/oauth2/authorize?client_id=1324942926886998046&scope=bot&permissions=1099511627775"
+  }
+},
+  "seo": {
+    "metatags": {
+      "theme-color": "#658a95",
+      "og:site_name": "Horizon"
+    },
+    "indexing": "navigable"
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/999wrld",
+      "github": "https://github.com/horizon/horizon-docs"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/commands",
+      "destination": "https://thisleadstonothing.com"
+    },
+    {
+      "source": "/invite",
+      "destination": "https://discord.com/oauth2/authorize?client_id=1324942926886998046&scope=bot&permissions=1099511627775"
+    },
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/999wrld"
+    }
+  ]
+}
