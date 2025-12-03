@@ -1,0 +1,84 @@
+---
+title: "Location"
+description: "Lookup detailed Juice WRLD track information."
+icon: map
+---
+
+## What Is The Location Command?
+
+The ``.location`` command allows you to **search for any Juice WRLD track** recorded at a specific studio / location and receive a **fully formatted Discord embed** with all known metadata.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has permissions to **Send Messages**, **Embed Links**, and **Use External URLs** to fully display track information and the sheet button.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+When you run `.location <location>`, Horizon:
+
+1. Checks your search term and finds songss recorded at that location only.
+2. Checks all sheets in the **Discography Tracker** (Released, Unreleased, Unsurfaced, Misc).
+3. Returns a **detailed embed** with metadata including:
+    - Era & Era Thumbnail
+    - Producer & Engineer
+    - Instrumental Names
+    - File Names
+    - **Recording Locations**
+    - Recording, Preview, & Release Dates
+    - Track Properties (Duration, Category)
+    - Additional Info
+4. Includes a **button linking to the Discography Tracker** for quick reference.
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.location <location>
+```
+
+```javascript Example
+.location Paramount
+```
+</CodeGroup>
+
+---
+
+## Handling Multiple Matches
+
+<Info>
+If multiple locations match your search term, Horizon displays a **dropdown menu** for you to choose the correct location.  
+The dropdown shows:
+- Location names
+</Info>
+
+---
+
+## Handling Errors
+
+<Warning title="Command Limitations and Errors">
+Horizon provides error embeds in the following cases:
+
+- **Missing Location Name:**  
+  `Please specify a location to search for.`
+
+- **No Location Found:**  
+  `No recording locations matching "<search term>" found.`
+</Warning>
+
+---
+
+## Tips & Best Practices
+
+- Search using **full or partial recording locations names**.
+- Results may show multiple matches—**select the correct location** from the dropdown if prompted.
+- Use the **Discography Tracker button** to explore Darthh's juice tracker (💖).

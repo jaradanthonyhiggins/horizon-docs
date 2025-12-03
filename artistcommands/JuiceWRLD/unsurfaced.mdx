@@ -1,0 +1,97 @@
+---
+title: "Unsurfaced"
+description: "View all currently unsurfaced songs in Juice's Discography."
+icon: scroll
+---
+
+## What Is The Unsurfaced Command?
+
+The unsurfaced command lets you **view every currently unsurfaced / unleaked songs in era and alphabetical order and cycle throug them all with navigation buttons**.  
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has the permissions **"Send Messages"** and **"View Channel"** in the channel where you want to run the command.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Once .unsurfaced is used, it will return an embed with buttons to navigate to the next unsurfaced song. It is in era order and alphabetical order.  
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.unsurfaced
+```
+
+```javascript Example
+.unsurfaced
+```
+</CodeGroup>
+
+---
+
+## Displayed Information
+
+When a track (or tracks) are found, Horizon will display a detailed embed with:
+
+- **Track Title** (with alternates if available)  
+- **Produced By:** 
+- **Engineered By:**   
+- **Era:** (with matching color & cover art thumbnail)  
+- **Instrumental Name(s):**
+- **File Name(s):**
+- **Recording Location(s):**  
+- **Date(s):** (Recorded, Previewed, Teased,)  
+- **Properties:**
+
+<Info title="Example Embed">
+
+> - ## **Fire In My Lungs**  
+> - Produced By: **ATL Jacob & Metro Boomin**
+> - Engineered By: **Max Lord**
+> - **Era:** Outsiders
+---
+**Instrumental Name(s):** 
+> - Instrumental Name: **FBG 1604 [ATLJACOB]**
+---
+**File Name(s):**
+> - File Name: **Juice Wrld - fire in my lungs v1.2 (FBG 1604)**
+---
+> - **Recording Location(s):**
+> - **Home Recording Studio, Encino Hills, Los Angeles, CA.**  
+---
+> - **Date(s):**  
+> - Recorded: **July 23, 2019.**  
+> - First Previewed: **July 23, 2019.**
+---
+> - **Properties:**
+> - Category: **Throwaway Track (Open Verse)**
+---
+> - Additional Information:
+**(Will show if any exist.)**
+</Info>
+
+---
+
+## Navigation & Pagination
+
+When multiple tracks match, Horizon shows **1 track per page** with navigation buttons:
+
+- ⬅️ **Previous Page**  
+- ➡️ **Next Page**  
+
+<Info>
+Pagination is limited to **60 seconds** of interaction. If inactive for more than **60 seconds**, the buttons will be disabled.
+</Info>
+
+---

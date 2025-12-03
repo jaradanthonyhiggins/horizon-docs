@@ -1,0 +1,125 @@
+---
+title: "Auto Groupbuy Tracker"
+description: "Automatically tracks and updates currently on-going groupbuys."
+icon: sack-dollar
+---
+
+## What Is The AutoGB Command?
+
+The `.autogb` command allows you to **automatically create a live-updating Groupbuy embed** based on the live progress of that specific currently on-going groupbuy.
+
+After selecting a Groupbuy, Horizon will:
+
+- **Creates an embed with the current amount paid**, **the song(s) price**, **the amount of money left until the groupbuy is finished**, **the last donator's username**, **and the completion percent until the groupbuy is finished.**
+- Adds a **Contribute Button**
+- **Update the embed automatically** every minute
+- Keep updating until the Groupbuy is completed or cancelled.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Admin Permissions">
+        <Info>
+            To use `.autogb`, you **must** have the **Administrator** permission.  
+            Users without Admin will get a permission error embed.
+        </Info>
+    </Step>
+
+    <Step title="Verify Premium Access">
+        <Info>
+            This command requires **Server Premium** or **User Premium**.          
+            If your server is not premium, Horizon will show the premium prompt.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Running `.autogb` lets you choose any **ongoing Groupbuy**
+
+Once selected, Horizon will:
+- Do some wizard stuff to fetch the latest currently on-going groupbuy's information.
+- Build a **detailed embed**
+- Add a **Contribute button**
+- And Continuously update the embed **every minute**
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.autogb (#channel)
+```
+
+```javascript Example
+.autogb #groupbuys
+```
+</CodeGroup>
+
+---
+
+## Handling Errors
+
+<Warning title="Missing Permissions">
+If a non-admin tries to use `.autogb`, Horizon will respond with:  
+`You do NOT have administrator permissions to use this command.`
+</Warning>
+
+<Warning title="No Currently On-Going Groupbuys">
+If no groupbuys are currently live, Horizon will respond with:  
+`No currently on-going groupbuy's found.`
+</Warning>
+
+<Warning title="Premium Required">
+Servers without premium will trigger your normal:  
+**Upgrade to Premium** embed response.
+</Warning>
+
+---
+
+## Displayed Information
+
+When a Groupbuy is selected, Horizon builds an embed with the latest live tracking for the groupbuy you selected.  
+
+This includes:
+
+- **Embed Title**
+- **Amount Paid**
+- **Song Price**
+- **Last Donator's Profile Picture As The Thumbnail Image**
+- **Footer Text**
+- **Automatic Author Badge**
+- **Contribute Button**  
+
+<Info title="Example Embed">
+
+> ## **Hate Me Later & Ms. Jackson** 
+> - Amount Paid: **$3,180**
+
+> - Song(s) Price: **$16,000**
+
+>  ### **Footer:**  
+> - Amount Left: $12,820 | Last Donator: zooted7221#0 | Completion: 19.9%
+
+---
+
+> ### **💸 Contribute!**
+
+</Info>
+
+---
+
+<Info>
+If the embed message is deleted, Horizon will **stop tracking that Groupbuy automatically**.
+</Info>
+
+---
+
+## Tips & Best Practices
+- You can run `.autogb` multiple times to track multiple GBs simultaneously
+- Premium is required to use this command
+
+---

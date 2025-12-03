@@ -1,0 +1,108 @@
+---
+title: "Producer"
+description: "Search for Juice WRLD tracks by specific producers across Released, Unreleased, Unsurfaced, and Misc sheets."
+icon: music
+---
+
+## What Is The Producer Command?
+
+The producer command lets you **search for tracks by that producer**.  
+It will return all matching tracks across **Released, Unreleased, Unsurfaced, and Misc** sheets in a **paginated embed** with navigation buttons.
+
+---
+
+## Getting Started
+
+<Steps>
+    <Step title="Ensure Permissions">
+        <Info>
+            Make sure **Horizon, the channel, or the role** has the permissions **"Send Messages"** and **"View Channel"** in the channel where you want to run the command.
+        </Info>
+    </Step>
+</Steps>
+
+---
+
+## How It Works
+
+<Info>
+Input an **producer name** to fetch all tracks associated with them.  
+If multiple matches are found, Horizon will return a **paginated embed** with navigation buttons to scroll through results.
+</Info>
+
+<CodeGroup>
+```javascript Syntax
+.producer (producer name)
+```
+
+```javascript Example
+.producer Nick Mira
+```
+</CodeGroup>
+
+---
+
+## Handling No Matches
+
+<Warning title="No Tracks Found">
+If no tracks are found for the producer you searched, Horizon will respond with:  
+`No tracks produced by 'Producer Name' found!`
+</Warning>
+
+---
+
+## Displayed Information
+
+When a track is found, Horizon will display a detailed embed with:
+
+- **Track Title** (with alternates if available)  
+- **Producer By:**  
+- **Engineered By:**  
+- **Era:** (with matching color & cover art thumbnail)  
+- **Instrumental Name(s):**  
+- **Recording Location(s):**  
+- **Date(s):** (Recorded, Previewed, Teased, Released, Surfaced)  
+
+<Info title="Example Embed">
+
+> - ## **Never Switch**  
+> - Produced By: **Nick Mira**
+> - Engineered By: **Xavier Daniel**
+> - Era: **Goodbye & Good Riddance**
+---
+> - **Instrumental Name(s):**
+> - Instrumental: **NM - Cradle 85 BPM**
+> - Loop: **JimiHendrix 150BPM**
+> - Loop Kit: **Nick Mira - Monarch**
+> - Beat Pack: **juice december: late december**
+---
+> - **Recording Location(s):**
+> - **Paramount Recording Studio, Santa Monica, Los Angeles, CA.**  
+---
+> - **Date(s):**  
+> - Recorded: **February 17, 2018.**  
+> - First Previewed: **February 17, 2018.**
+</Info>
+
+---
+
+## Navigation & Pagination
+
+When multiple tracks match, Horizon shows **1 track per page** with navigation buttons:
+
+- ⬅️ **Previous Page**  
+- ➡️ **Next Page**  
+
+<Info>
+Pagination is limited to **60 seconds** of interaction. If inactive for more than **60 seconds**, the buttons will be disabled.
+</Info>
+
+---
+
+## Tips & Best Practices
+
+- Always type the **Producer’s full name** for best results (case-insensitive).  
+- Supports Producer's credited with **multiple tracks** across sheets.  
+- Producer names are normalized so variations like `Nick Mira`, `nick mira`, or `NICK MIRA` all match.  
+
+---
